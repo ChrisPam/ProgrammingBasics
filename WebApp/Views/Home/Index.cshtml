@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Sumator";
+}
+
+<h2>Sumator</h2>
+
+<form method="post" action="/home/calculate">
+    <input type="submit" name="letter" value="A" />
+    <input type="submit" name="letter" value="B" />
+    <input type="submit" name="letter" value="C" />
+    <input type="submit" name="letter" value="D" />
+    <input type="submit" name="letter" value="E" />
+    <input type="submit" name="letter" value="F" />
+    <input type="submit" name="letter" value="G" />
+    <input type="submit" name="letter" value="H" />
+    <input type="submit" name="letter" value="I" /><br />
+    <input type="submit" name="letter" value="J" />
+    <input type="submit" name="letter" value="K" />
+    <input type="submit" name="letter" value="L" />
+    <input type="submit" name="letter" value="M" />
+    <input type="submit" name="letter" value="N" />
+    <input type="submit" name="letter" value="O" />
+    <input type="submit" name="letter" value="P" />
+    <input type="submit" name="letter" value="Q" />
+    <input type="submit" name="letter" value="R" /><br />
+    <input type="submit" name="letter" value="S" />
+    <input type="submit" name="letter" value="T" />
+    <input type="submit" name="letter" value="U" />
+    <input type="submit" name="letter" value="V" />
+    <input type="submit" name="letter" value="W" />
+    <input type="submit" name="letter" value="X" />
+    <input type="submit" name="letter" value="Y" />
+    <input type="submit" name="letter" value="Z" /><br />
+    @ViewBag.result
+    @ViewBag.error
+</form>
