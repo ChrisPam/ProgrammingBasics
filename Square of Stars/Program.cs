@@ -11,18 +11,15 @@ namespace Square_of_Stars
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
-            var num = 1;
-            for (int row = 1; row <= n; row++)
+
+            for (int i = 1; i <= n; i++)
             {
-                for (int col = 1; col <= row; col++)
+                Console.Write("*");
+                for (int j = 1; j < n; j++)
                 {
-                    if (col > 1) Console.Write(" ");
-                    Console.Write(num);
-                    num++;
-                    if (num > n) break;
+                    Console.Write(" *");
                 }
                 Console.WriteLine();
-                if (num > n) break;
             }
         }
     }

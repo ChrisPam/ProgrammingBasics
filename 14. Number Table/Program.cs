@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Square_of_Stars
+namespace _14.Number_Table
 {
     class Program
     {
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
-            var num = 1;
-            for (int row = 1; row <= n; row++)
+
+            for (int row = 0; row < n; row++)
             {
-                for (int col = 1; col <= row; col++)
+                for (int col = 0; col < n; col++)
                 {
-                    if (col > 1) Console.Write(" ");
-                    Console.Write(num);
-                    num++;
-                    if (num > n) break;
+                    var num = row + col + 1;
+                    if (num > n)
+                    {
+                        num = 2 * n - num;
+                    }
+                    Console.Write(num + " ");
                 }
                 Console.WriteLine();
-                if (num > n) break;
             }
         }
     }
