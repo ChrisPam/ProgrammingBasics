@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int startLetter = char.Parse(Console.ReadLine());
         int stopLetter = char.Parse(Console.ReadLine());
